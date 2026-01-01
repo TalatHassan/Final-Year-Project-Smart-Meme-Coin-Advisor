@@ -1,0 +1,45 @@
+{
+  "model_info": {
+    "type": "XGBoost Classifier",
+    "task": "Multi-class Classification",
+    "classes": [
+      "BUY",
+      "HOLD",
+      "SELL",
+      "buy",
+      "hold",
+      "sell"
+    ],
+    "num_features": 107,
+    "training_date": "2026-01-01 15:41:04"
+  },
+  "performance": {
+    "train_accuracy": 0.9427999910098218,
+    "test_accuracy": 0.8920303861194768,
+    "train_f1_score": 0.9428176121048599,
+    "test_f1_score": 0.8920801473659458,
+    "cv_mean_accuracy": 0.8598319280476098,
+    "cv_std_accuracy": 0.003328085246840345
+  },
+  "data_info": {
+    "train_samples": 88986,
+    "test_samples": 22247
+  },
+  "model_parameters": {
+    "objective": "multi:softmax",
+    "num_class": "6",
+    "max_depth": "8",
+    "learning_rate": "0.1",
+    "n_estimators": "300",
+    "min_child_weight": "1",
+    "gamma": "0.1",
+    "subsample": "0.8",
+    "colsample_bytree": "0.8",
+    "reg_alpha": "0.1",
+    "reg_lambda": "1.0",
+    "random_state": "42",
+    "tree_method": "hist",
+    "eval_metric": "mlogloss",
+    "early_stopping_rounds": "50"
+  }
+}
